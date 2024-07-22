@@ -33,7 +33,7 @@ class StoreRequest extends FormRequest
         return [
             'name.required' => 'El campo es requerido',
             'name.string' => 'El valor no es correcto',
-            'name.max' => 'Solo se permiten 50 caractéres',
+            'name.max' => 'Solo se permiten 50 caracteres',
 
             'description.string' => 'El valor no es correcto',
             'description.max' => 'Solo se permiten 255 caracteres',

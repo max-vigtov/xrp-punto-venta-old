@@ -2,10 +2,8 @@
 
 namespace App\Http\Controllers;
 
-
 use App\Http\Requests\Category\StoreRequest;
 use App\Http\Requests\Category\UpdateRequest;
-use Illuminate\Http\Request;
 use App\Models\Category;
 
 class CategoryController extends Controller
