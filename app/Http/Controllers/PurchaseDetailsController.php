@@ -5,7 +5,7 @@ use App\Http\Requests\Purchase\StoreRequest;
 use App\Http\Requests\Purchase\UpdateRequest;
 use App\Models\Purchase;
 
-class CategoryController extends Controller
+class PurchaseController extends Controller
 {
 
     public function index()

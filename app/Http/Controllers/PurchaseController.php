@@ -6,7 +6,7 @@ use App\Http\Requests\Purchase\UpdateRequest;
 use App\Models\Provider;
 use App\Models\Purchase;
 
-class CategoryController extends Controller
+class PurchaseController extends Controller
 {
 
     public function index()
@@ -30,7 +30,7 @@ class CategoryController extends Controller
             "quality" => $request->quality[$key], "price" =>$request->price[$key]);
         }
 
-        $purchase->products()->createMany($result);
+        $purchase->purchaseDetails()->createMany($result);
         return redirect()->route('purchases.index');
     }
 
