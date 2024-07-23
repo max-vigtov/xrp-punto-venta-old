@@ -17,7 +17,7 @@ class CreateProductsTable extends Migration
             $table->string('image');
             $table->decimal('sell_price',12,2);
 
-            $table->enum( 'status', ['ACTIVE','DESACTIVATED'])->default('ACTIVE');
+            $table->enum('status',['ACTIVE','DESACTIVATED'])->default('ACTIVE');
             $table->unsignedBigInteger('category_id');
             $table->foreign('category_id')->references('id')->on('categories');
             $table->unsignedBigInteger('provider_id');
